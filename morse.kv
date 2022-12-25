@@ -1,0 +1,20 @@
+<MyGrid>
+    name:"main"
+    secret:secret
+    lb:lb
+    GridLayout:
+        cols:1
+        size:root.width-100,root.height-100
+        pos:50,50
+        Label:
+            id:lb
+            text:"MORSE CODE"
+            size:100,10
+        TextInput:
+            multiline: True
+            id:secret
+
+        Button:
+            text:"SEND"
+            on_press:root.btn()
+            
